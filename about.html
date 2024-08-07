@@ -3,29 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Sadgay</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Personal Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Sadgay</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="artist.html">Artist</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <div class="container-fluid text-center">
+        <header class="py-5">
+            <h1>Welcome to My Personal Website</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>I HAVE SEEN THE FUTURE AND THERE IS NO FUTURE</p>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello, I am [Your Name], a passionate designer and developer...</p>
+            </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Sadgay</p>
-    </footer>
+        <section id="portfolio" class="py-5 bg-light">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <!-- Portfolio items here -->
+            </div>
+        </section>
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me at [Your Email]...</p>
+            </div>
+        </section>
+        <footer class="py-4 bg-dark text-white">
+            <div class="container">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
